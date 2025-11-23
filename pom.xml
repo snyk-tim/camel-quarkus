@@ -53,7 +53,7 @@
         <quarkiverse-freemarker.version>1.2.0</quarkiverse-freemarker.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/freemarker/quarkus-freemarker-parent/ -->
         <quarkiverse-fury.version>0.3.2</quarkiverse-fury.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/fury/quarkus-fury-parent/ -->
         <quarkiverse-groovy.version>3.22.2</quarkiverse-groovy.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/groovy/quarkus-groovy-parent/ -->
-        <quarkiverse-jackson-jq.version>2.2.0</quarkiverse-jackson-jq.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/jackson-jq/quarkus-jackson-jq-parent/ -->
+        <quarkiverse-jackson-jq.version>2.4.0</quarkiverse-jackson-jq.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/jackson-jq/quarkus-jackson-jq-parent/ -->
         <quarkiverse-jgit.version>3.5.1</quarkiverse-jgit.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/jgit/quarkus-jgit/ -->
         <quarkiverse-jsch.version>3.0.15</quarkiverse-jsch.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/jsch/quarkus-jsch/ -->
         <quarkiverse-langchain4j.version>0.23.3</quarkiverse-langchain4j.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/langchain4j/quarkus-langchain4j-parent -->
@@ -750,7 +750,7 @@
                 <executions>
                     <execution>
                         <id>default-test</id>
-                        <phase /><!-- unbound here to speedup -Dquickly build; bound to a phase in camel-quarkus-build-parent-it -->
+                        <phase/><!-- unbound here to speedup -Dquickly build; bound to a phase in camel-quarkus-build-parent-it -->
                     </execution>
                 </executions>
             </plugin>
@@ -761,7 +761,7 @@
                 <executions>
                     <execution>
                         <id>attach-descriptor</id>
-                        <phase /><!-- skip to save time -->
+                        <phase/><!-- skip to save time -->
                     </execution>
                 </executions>
             </plugin>
@@ -832,7 +832,7 @@
                                         <requireJavaVersion>
                                             <version>11</version>
                                         </requireJavaVersion>
-                                        <dependencyConvergence />
+                                        <dependencyConvergence/>
                                         <filteredExternalRules>
                                             <location>classpath:enforcer-rules/quarkus-require-maven-version.xml</location>
                                         </filteredExternalRules>
@@ -1099,7 +1099,7 @@
                         <executions>
                             <execution>
                                 <id>camel-quarkus-enforcer-rules</id>
-                                <phase /><!-- Speedup the check-format profile by skipping the enforcer  -->
+                                <phase/><!-- Speedup the check-format profile by skipping the enforcer  -->
                             </execution>
                         </executions>
                     </plugin>
@@ -1135,7 +1135,7 @@
                         <executions>
                             <execution>
                                 <id>source-release-assembly</id>
-                                <phase /><!-- fix https://github.com/apache/camel-quarkus/issues/844 -->
+                                <phase/><!-- fix https://github.com/apache/camel-quarkus/issues/844 -->
                             </execution>
                             <execution>
                                 <id>camel-quarkus-source-release-assembly</id>
